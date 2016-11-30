@@ -1,0 +1,7 @@
+---
+
+- name: Set git settings
+  shell: |
+    git config --global user.email "{{ devel_user.email }}"
+    git config --global user.name  "{{ devel_user.name }}"
+    git config --global push.default simple
